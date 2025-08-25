@@ -119,8 +119,14 @@ public class LinkedLists {
 
     public void delete(int index){
         if(size <= index){
-            throw new IndexOutOfBoundsException():
+            throw new IndexOutOfBoundsException();
         }
+
+        Node t = tail;
+        for(int i=0; i != size - index -1; i++){
+            t = t.next;
+        }
+        t.next = t.next.next;
 
     }
 
