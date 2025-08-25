@@ -117,6 +117,13 @@ public class LinkedLists {
 
     }
 
+    public void delete(int index){
+        if(size <= index){
+            throw new IndexOutOfBoundsException():
+        }
+
+    }
+
 
 
 }
