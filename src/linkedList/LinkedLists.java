@@ -122,6 +122,13 @@ public class LinkedLists {
             throw new IndexOutOfBoundsException();
         }
 
+        // check last index
+        if(size -1 == index){
+            // remove tail element
+            Node t = tail;
+            tail = t.next;
+        }
+
         Node t = tail;
         for(int i=0; i != size- index -2; i++){
             t = t.next;
