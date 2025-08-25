@@ -99,13 +99,22 @@ public class LinkedLists {
         return false;
     }
 
-    public boolean insert(String name, int index){
+    public void insert(String name, int index){
         // first check for valid index
-        if(numOfElement() -1 < index){
+        if(numOfElement()  < index){
             throw new IndexOutOfBoundsException("index is outbound");
         }
-        System.out.println("");
-        return true;
+        // create a new node
+        Node newnode = new Node(name);
+        newnode.next = null;
+        Node t = tail;
+        // move to the current index position
+        for(int i =0; i!= size - index -1 ;i++){
+            t = t.next;
+        }
+        newnode.next = t.next;
+        t.next = newnode;
+
     }
 
 
