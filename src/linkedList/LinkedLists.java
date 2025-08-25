@@ -100,6 +100,10 @@ public class LinkedLists {
     }
 
     public boolean insert(String name, int index){
+        // first check for valid index
+        if(numOfElement() -1 < index){
+            throw new IndexOutOfBoundsException("index is outbound");
+        }
         System.out.println("");
         return true;
     }
