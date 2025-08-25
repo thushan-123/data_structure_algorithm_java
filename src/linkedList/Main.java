@@ -7,11 +7,14 @@ public class Main {
         linkedLists.add("hii");
         linkedLists.add("helo");
         linkedLists.add("harry");
-        linkedLists.add("ron");
+        linkedLists.add("ron1");
+        linkedLists.add("ron2");
+        linkedLists.add("ron3");
 
-        linkedLists.printAll();
-        System.out.println(linkedLists.searchIndex("ron"));
-        System.out.println(linkedLists.remove("hii"));
+//        linkedLists.printAll();
+//        System.out.println(linkedLists.searchIndex("ron"));
+//        System.out.println(linkedLists.remove("hii"));
+        linkedLists.insert("potter", 0);
         linkedLists.printAll();
     }
 }
