@@ -123,7 +123,7 @@ public class LinkedLists {
         }
 
         Node t = tail;
-        for(int i=0; i != size - index -1; i++){
+        for(int i=0; i != size- index -2; i++){
             t = t.next;
         }
         t.next = t.next.next;
