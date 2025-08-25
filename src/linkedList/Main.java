@@ -14,7 +14,8 @@ public class Main {
 //        linkedLists.printAll();
 //        System.out.println(linkedLists.searchIndex("ron"));
 //        System.out.println(linkedLists.remove("hii"));
-        linkedLists.insert("potter", 0);
+        //linkedLists.insert("potter", 0);
+        linkedLists.delete(2);
         linkedLists.printAll();
     }
 }
