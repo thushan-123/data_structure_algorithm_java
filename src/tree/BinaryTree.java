@@ -25,13 +25,13 @@ public class BinaryTree {
                     tmpNode.leftChild = newNode;
                     break;
                 }
-                continue;
+                tmpNode = tmpNode.leftChild;
             }else{
                 if(tmpNode.rightChild == null){
                     tmpNode.rightChild = newNode;
                     break;
                 }
-                continue;
+                tmpNode = tmpNode.rightChild;
             }
         }
 
