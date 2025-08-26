@@ -118,9 +118,9 @@ public class LinkedLists {
     }
 
     public void delete(int index){
-//        if(size < index){
-//            throw new IndexOutOfBoundsException();
-//        }
+        if(size < index){
+            throw new IndexOutOfBoundsException();
+        }
 
         // check last index
         if(size -1 == index){
