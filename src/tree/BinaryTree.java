@@ -36,4 +36,8 @@ public class BinaryTree {
         }
 
     }
+
+    public int  findNode (int value){
+
+    }
 }
