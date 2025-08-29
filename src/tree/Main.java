@@ -10,6 +10,6 @@ public class Main {
         binaryTree.addNode(2);
 
         System.out.println("add data success");
-        System.out.println(binaryTree.findNode(17));
+        System.out.println(binaryTree.findNode(10));
     }
 }
