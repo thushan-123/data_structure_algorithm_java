@@ -21,17 +21,18 @@ public class BinaryTree {
 
             if(tmpNode.data < value){
                 // right side node
-                if (tmpNode.leftChild == null){
-                    tmpNode.leftChild = newNode;
-                    break;
-                }
-                tmpNode = tmpNode.leftChild;
-            }else{
                 if(tmpNode.rightChild == null){
                     tmpNode.rightChild = newNode;
                     break;
                 }
                 tmpNode = tmpNode.rightChild;
+            }else{
+                if (tmpNode.leftChild == null){
+                    tmpNode.leftChild = newNode;
+                    break;
+                }
+                tmpNode = tmpNode.leftChild;
+
             }
         }
 
