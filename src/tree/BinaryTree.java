@@ -20,7 +20,7 @@ public class BinaryTree {
         while (true){
 
             if(tmpNode.data < value){
-                // left side node
+                // right side node
                 if (tmpNode.leftChild == null){
                     tmpNode.leftChild = newNode;
                     break;
@@ -40,26 +40,18 @@ public class BinaryTree {
     public int  findNode (int value){
         Node tmp = rootNode;
 
-        // check the value is equal to root node
-
-//        if (tmp.data == value){
-//            return tmp.data;
-//        }
-
-        while (true){
+        while (tmp != null){
 
             if(tmp.data == value){
                 return tmp.data;
-            }else if(tmp == null){
-                break;
             }
-            // traverse let node or right node
+            // traverse left node or right node
             if(value > tmp.data){
                 // right child
-                tmp = tmp.rightChild;
+                tmp = tmp.leftChild;
             }else {
                 // left child
-                tmp = tmp.leftChild;
+                tmp = tmp.rightChild;
             }
         }
         return -1;
