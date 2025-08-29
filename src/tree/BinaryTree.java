@@ -45,5 +45,14 @@ public class BinaryTree {
         if (tmp.data == value){
             return tmp.data;
         }
+
+        while (true){
+
+            if(value > tmp.data){
+                // right child
+            }else {
+                // left child
+            }
+        }
     }
 }
