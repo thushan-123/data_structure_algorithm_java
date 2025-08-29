@@ -49,10 +49,10 @@ public class BinaryTree {
             // traverse left node or right node
             if(value > tmp.data){
                 // right child
-                tmp = tmp.leftChild;
+                tmp = tmp.rightChild;
             }else {
                 // left child
-                tmp = tmp.rightChild;
+                tmp = tmp.leftChild;
             }
         }
         return -1;
