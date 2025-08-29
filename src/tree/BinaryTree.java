@@ -42,12 +42,18 @@ public class BinaryTree {
 
         // check the value is equal to root node
 
-        if (tmp.data == value){
-            return tmp.data;
-        }
+//        if (tmp.data == value){
+//            return tmp.data;
+//        }
 
         while (true){
 
+            if(tmp.data == value){
+                return tmp.data;
+            }else if(tmp == null){
+                break;
+            }
+            // traverse let node or right node
             if(value > tmp.data){
                 // right child
                 tmp = tmp.rightChild;
@@ -56,5 +62,6 @@ public class BinaryTree {
                 tmp = tmp.leftChild;
             }
         }
+        return -1;
     }
 }
