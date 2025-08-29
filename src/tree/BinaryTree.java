@@ -50,8 +50,10 @@ public class BinaryTree {
 
             if(value > tmp.data){
                 // right child
+                tmp = tmp.rightChild;
             }else {
                 // left child
+                tmp = tmp.leftChild;
             }
         }
     }
