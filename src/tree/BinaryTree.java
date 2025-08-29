@@ -38,6 +38,12 @@ public class BinaryTree {
     }
 
     public int  findNode (int value){
+        Node tmp = rootNode;
 
+        // check the value is equal to root node
+
+        if (tmp.data == value){
+            return tmp.data;
+        }
     }
 }
